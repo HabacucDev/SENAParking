@@ -8,9 +8,11 @@
 </head>
 
 <body>
-    <h1>SenaPrking</h1><hr>
+        <!-- Contenedor donde se insertará el header -->
+        <div id="header-container"></div>
+
+<div>
     <br>
-    <div>
     <input type="text" id="user" placeholder="Usuario"> <!-- Ingresa el usuario --> 
     <br>
     <input type="text" id="password" placeholder="Contraseña"> <!-- Ingresa la contraseña -->
@@ -19,5 +21,17 @@
     <br>
     <p>¿Olvidaste tu contraseña?</p>
     </div>
+</div>
+
+<script>
+    // Cargar el contenido del header desde un archivo HTML externo
+    fetch('/view/components/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el header:', error));
+</script>
+
 </body>
 </html>

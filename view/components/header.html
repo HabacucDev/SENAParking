@@ -1,0 +1,75 @@
+<style>
+    /* Estilos generales para el body */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Estilos del header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #4CAF50;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40px;
+        /* Tamaño del logo */
+        margin-right: 15px;
+    }
+
+    .app-name h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .app-name p {
+        margin: 0;
+        font-size: 14px;
+        color: #e8e8e8;
+    }
+
+    /* Lado derecho */
+    .right {
+        text-align: right;
+    }
+
+    .right p {
+        margin: 5px 0;
+    }
+
+    .right span {
+        font-weight: bold;
+    }
+</style>
+
+<!-- Header Reutilizable -->
+<header class="header">
+    <div class="left">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <div class="app-name">
+            <h1>SenaParking</h1>
+            <p>DeveloperSOLUTIONS801</p>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="user-session">
+            <!-- Solo mostramos la inicial del nombre -->
+            <div class="profile-initial">
+                {{ username.charAt(0).toUpperCase() }}
+            </div>
+        </div>
+    </div>
+</header>

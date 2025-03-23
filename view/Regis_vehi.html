@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="author" content="AdsoDeveloperSolutions801">
+    <meta name="course" content="ADSO 2873801">
+    <title>Registro de vehículos</title>
+</head>
+<body>
+    
+    <!-- Contenedor donde se insertará el header -->
+    <div id="header-container"></div>
+
+    <div>
+
+        <h1>Registro de vehículos</h1>
+
+        <form action="" method="POST">
+            <br>
+            <label for="tipo">Tipo de vehículo:</label>
+            <input type="text" name="tipo" id="tipo" required>
+            <br>
+            <label for="placa">Placa:</label>
+            <input type="text" name="placa" id="placa" required>
+            <br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" id="modelo" required>
+            <br>
+            <label for="color">Color:</label>
+            <input type="text" name="color" id="color" required>
+            <input type="submit" value="Registrar">
+        </form>
+
+    </div>
+
+    <script>
+        // Cargar el contenido del header desde un archivo HTML externo
+        fetch('/view/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el header:', error));
+    </script>
+
+</body>
+</html>

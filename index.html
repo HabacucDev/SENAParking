@@ -1,37 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="AdsoDeveloperSolutions801">
+    <meta name="course" content="ADSO 2873801">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Favicon (ícono en la pestaña del navegador) -->
+    <link rel="icon" type="icon" href="/img/favicon.ico">
     <title>SENAPARKING</title>
 </head>
 
 <body>
-        <!-- Contenedor donde se insertará el header -->
-        <div id="header-container"></div>
+    <!-- Contenedor donde se insertará el header -->
+    <div id="header-container"></div>
 
-<div>
-    <br>
-    <input type="text" id="user" placeholder="Usuario"> <!-- Ingresa el usuario --> 
-    <br>
-    <input type="text" id="password" placeholder="Contraseña"> <!-- Ingresa la contraseña -->
-    <br>
-    <button onclick="login()">Ingresar</button> <!-- Botón para ingresar -->
-    <br>
-    <p>¿Olvidaste tu contraseña?</p>
+    <div class="container-login" style="text-align: center;">
+        <br>
+        <input type="text" id="user" placeholder="Usuario"> <!-- Ingresa el usuario -->
+        <br>
+        <input type="text" id="password" placeholder="Contraseña"> <!-- Ingresa la contraseña -->
+        <br>
+        <button onclick="login()">Ingresar</button> <!-- Botón para ingresar -->
+        <br>
+        <p>¿Olvidaste tu contraseña?</p>
     </div>
-</div>
+    
 
-<script>
-    // Cargar el contenido del header desde un archivo HTML externo
-    fetch('/view/components/header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-container').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar el header:', error));
-</script>
+    <script>
+        // Cargar el contenido del header desde un archivo HTML externo
+        fetch('/view/components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el header:', error));
+    </script>
 
 </body>
+
 </html>

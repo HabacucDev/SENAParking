@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta name="author" content="AdsoDeveloperSolutions801">
     <meta name="course" content="ADSO 2873801">
+    <!-- Favicon (ícono en la pestaña del navegador) -->
+    <link rel="icon" type="icon" href="/img/favicon.ico">
     <title>Registro de vehículos</title>
+    <style>
+        /* Estilos para la flecha de retroceso */
+        .back-arrow {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            font-size: 35px;
+            cursor: pointer;
+            color: #2e2f30;
+            /* Color azul */
+        }
+
+        .back-arrow:hover {
+            color: #0056b3;
+            /* Color azul más oscuro al pasar el mouse */
+        }
+    </style>
 </head>
+
 <body>
-    
+
+
     <!-- Contenedor donde se insertará el header -->
     <div id="header-container"></div>
 
-    <div>
+    <!-- Flecha de retroceso -->
+    <div class="back-arrow" onclick="goBack()">
+    <!-- Ícono de flecha izquierda -->
+    <i class="fas fa-arrow-left">←</i>
+    </div>
 
-        <h1>Registro de vehículos</h1>
 
+
+    <div class="container-form" style="text-align: center;">
+        <br>
+
+        <h2>Registro de vehículos</h2>
         <form action="" method="POST">
             <br>
-            <label for="tipo">Tipo de vehículo:</label>
-            <input type="text" name="tipo" id="tipo" required>
             <br>
-            <label for="placa">Placa:</label>
-            <input type="text" name="placa" id="placa" required>
+            <label for="color">Color:</label>
+            <input type="text" name="color" id="color" required>
             <br>
             <label for="modelo">Modelo:</label>
             <input type="text" name="modelo" id="modelo" required>
             <br>
-            <label for="color">Color:</label>
-            <input type="text" name="color" id="color" required>
-            <input type="submit" value="Registrar">
+            <label for="placa">Placa:</label>
+            <input type="text" name="placa" id="placa" required>
+            <br>
+            <label for="tipo">Tipo de vehículo:</label>
+            <select name="tipo" id="">
+                <option value="Automóvil">Automóvil</option>
+                <option value="Motocicleta">Motocicleta</option>
+                <option value="Camioneta">Bicicleta</option>
+                <option value="Camión">Oficial</option>
+                <option value="Tráiler">Aula móvil</option>
+            </select>
+            <br>
+            <textarea name="observaciones" id="observaciones">Observaciones</textarea>
+            <input type="submit" value="Confirmar">
         </form>
 
-    </div>
+
+    </div>    
+
 
     <script>
         // Cargar el contenido del header desde un archivo HTML externo
@@ -42,7 +83,13 @@
                 document.getElementById('header-container').innerHTML = data;
             })
             .catch(error => console.error('Error al cargar el header:', error));
+
+        // Función para retroceder en el historial del navegador
+        function goBack() {
+            window.history.back();
+        }
     </script>
 
 </body>
+
 </html>

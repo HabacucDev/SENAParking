@@ -101,7 +101,7 @@ CREATE TABLE `usuarios_sistema` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `vehiculos`
+-- Estructura de tabla para la tabla `vehículos`
 --
 
 CREATE TABLE `vehiculos` (

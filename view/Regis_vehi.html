@@ -10,6 +10,16 @@
     <link rel="icon" type="icon" href="/img/favicon.ico">
     <title>Registro de vehículos</title>
     <style>
+        /* Estilos generales del formulario */
+        .container-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
         /* Estilos para la flecha de retroceso */
         .back-arrow {
             position: relative;
@@ -25,6 +35,23 @@
             color: #0056b3;
             /* Color azul más oscuro al pasar el mouse */
         }
+
+                /* Estilos para el botón de confirmar */
+                input[type="submit"] {
+            background-color: #2e2f30;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px 0;
+            cursor: pointer;
+            width: 30%;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1a1a1a;
+        }
     </style>
 </head>
 
@@ -36,8 +63,8 @@
 
     <!-- Flecha de retroceso -->
     <div class="back-arrow" onclick="goBack()">
-    <!-- Ícono de flecha izquierda -->
-    <i class="fas fa-arrow-left">←</i>
+        <!-- Ícono de flecha izquierda -->
+        <i class="fas fa-arrow-left">←</i>
     </div>
 
 
@@ -49,30 +76,34 @@
         <form action="" method="POST">
             <br>
             <br>
-            <label for="color">Color:</label>
-            <input type="text" name="color" id="color" required>
-            <br>
-            <label for="modelo">Modelo:</label>
-            <input type="text" name="modelo" id="modelo" required>
-            <br>
-            <label for="placa">Placa:</label>
-            <input type="text" name="placa" id="placa" required>
-            <br>
-            <label for="tipo">Tipo de vehículo:</label>
-            <select name="tipo" id="">
-                <option value="Automóvil">Automóvil</option>
-                <option value="Motocicleta">Motocicleta</option>
-                <option value="Camioneta">Bicicleta</option>
-                <option value="Camión">Oficial</option>
-                <option value="Tráiler">Aula móvil</option>
-            </select>
-            <br>
-            <textarea name="observaciones" id="observaciones">Observaciones</textarea>
+            <div class="container-form" style="text-align: right;">
+                <label for="placa">Placa:</label>
+                <input type="text" name="placa" id="placa" required>
+                <br>
+                <label for="tipo">Tipo de vehículo:</label>
+                <select name="tipo" id="">
+                    <option value="Automóvil">Automóvil</option>
+                    <option value="Motocicleta">Motocicleta</option>
+                    <option value="Camioneta">Bicicleta</option>
+                    <option value="Camión">Oficial</option>
+                    <option value="Tráiler">Aula móvil</option>
+                </select>
+            </div>
+            
+            <div class="container-form" style="text-align: left;">
+                <label for="color">Color:</label>
+                <input type="text" name="color" id="color" required>
+                <br>
+                <label for="modelo">Modelo:</label>
+                <input type="text" name="modelo" id="modelo" required>
+                <br>
+                <textarea name="observaciones" id="observaciones">Observaciones</textarea>
+            </div>
             <input type="submit" value="Confirmar">
         </form>
 
 
-    </div>    
+    </div>
 
 
     <script>

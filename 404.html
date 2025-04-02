@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - 404</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #4285F4, #EA4335, #FBBC05, #34A853, #4285F4); /* Degradado dinámico */
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white; /* Texto blanco para mejor contraste */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente para el contenedor */
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff; /* Código de error blanco */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #eee;
+    margin-bottom: 1.5rem;
+}
+
+p.lead {
+    color: #ddd;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background-color: #64b5f6; /* Un tono más claro del azul */
+    border-color: #64b5f6;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4285f4;
+    border-color: #4285f4;
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 1.1rem 2.2rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container text-center">
+        <div class="error-code display-1 fw-bold">404</div>
+        <h1 class="mb-4">¡Oops! Página no encontrada</h1>
+        <p class="lead mb-5">La página que estás buscando no existe o ha sido movida.</p>
+        <a href="/" class="btn btn-primary btn-lg"><i class="fas fa-home me-2"></i> Volver al inicio</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

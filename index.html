@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon (ícono en la pestaña del navegador) -->
     <link rel="icon" type="x-icon" href="/assets/favicon.ico">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
     <title>SENAPARKING</title>
 </head>
 
@@ -16,18 +20,17 @@
     <!-- Contenedor donde se insertará el header -->
     <div id="header-container"></div>
 
-    <div class="container-login" style="text-align: center;">
-        <br>
-        <input type="text" id="user" placeholder="Usuario"> <!-- Ingresa el usuario -->
-        <br>
-        <input type="text" id="password" placeholder="Contraseña"> <!-- Ingresa la contraseña -->
-        <br>
-        <button onclick="login()">Ingresar</button> <!-- Botón para ingresar -->
-        <br>
-        <p>¿Olvidaste tu contraseña?</p>
+    <!--Contenedor principal-->
+    <div class="container-fluid background">
+        <div class="row vh-100 justify-content-center align-items-center">
+            <div class="col-md-4 login-container text-center p-4">
+                <div class="d-flex justify-content-center gap-5">
+                    <button class="btn btn-dark py-3 btn-hover">⭐ Iniciar Sesión</button>
+                    <button class="btn btn-success py-3 btn-hover">⭐ Registrarse</button>
+                </div>
+            </div>
+        </div>
     </div>
-    
-
     <script>
         // Cargar el contenido del header desde un archivo HTML externo
         fetch('/view/components/header.html')

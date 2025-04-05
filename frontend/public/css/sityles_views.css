@@ -1,0 +1,122 @@
+/* Estilos Reg_userParking */
+
+/* Estilos personalizados */
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #d6c9f1;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: #8e44ad;
+}
+
+.btn-confirmar {
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+.btn-confirmar:hover {
+    background-color: #000;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background-color: #fef5ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Estilos Reg_userSystem */
+
+.register-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#formulario {
+    margin-bottom: 1rem;
+}
+
+.sign-in-btn {
+    background-color: #222;
+    color: #ffffff;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 60px;
+}
+
+
+/* Estilos reg_vehiculos */
+
+/* Estilos generales del formulario */
+.container-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la flecha de retroceso */
+.back-arrow {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #2e2f30;
+    /* Color azul */
+}
+
+.back-arrow:hover {
+    color: #0056b3;
+    /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón de confirmar */
+input[type="submit"] {
+    background-color: #2e2f30;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a1a1a;
+}

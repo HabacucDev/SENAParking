@@ -7,7 +7,7 @@
     <meta name="author" content="AdsoDeveloperSolutions801">
     <meta name="course" content="ADSO 2873801">
     <!-- Favicon (ícono en la pestaña del navegador) -->
-    <link rel="icon" type="x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="x-icon" href="/frontend/public/images/favicon.ico">
     <title>Registro de vehículos</title>
     <style>
         /* Estilos generales del formulario */
@@ -110,21 +110,8 @@
 
     </div>
 
-
-    <script>
-        // Cargar el contenido del header desde un archivo HTML externo
-        fetch('/view/components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error al cargar el header:', error));
-
-        // Función para retroceder en el historial del navegador
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+    <!-- Cargar el header-->
+    <script src="/frontend/public/js/scriptsDOM.js"></script>
 
 </body>
 

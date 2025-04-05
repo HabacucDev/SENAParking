@@ -7,13 +7,13 @@
     <title>Registro Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
-        .form-container {
-            padding: auto;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
+        .register-container {
+            max-width: 600px;
+            margin: 50px auto;
             background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .form-control {
@@ -41,19 +41,22 @@
         alt="Logo SENA">
 
     <!-- Formulario -->
-    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-        <div class="bg-white p-4 shadow rounded" style="width: 100%; max-width: 800px;">
-            <h2 class="text-center mb-4">Registro Usuario Sistema</h2>
+    <div class="register-container">
+      <h2 class="text-center mb-4">Registro de Usuarios</h2>
+
             <form>
-                <div class="mb-3">
-                    <label for="text" class="form-label">Id:</label>
-                    <input type="text" class="form-control" id="id" placeholder="Id">
+
+                <div class="row mb-3">
+                    <div class="col-5">
+                        <label for="text" class="form-label">Id:</label>
+                        <input type="text" class="form-control" id="id" placeholder="Id">
+                    </div>
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="rol" class="form-label">Rol:</label>
                     <select class="form-select" id="rol" name="rol" required>
                         <option value="" selected disabled>Selecciona el rol</option>
@@ -62,19 +65,19 @@
                         <option value="administrador">Guarda de Seguridad</option>
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="email" class="form-label">Correo Electronico:</label>
                     <input type="email" class="form-control" id="correo_electronico" placeholder="Email">
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="numero" class="form-label">Número contacto:</label>
                     <input type="numero" class="form-control" id="numero_contacto" placeholder="Numero">
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="usurio" class="form-label">Nombre Usuario:</label>
                     <input type="usuario" class="form-control" id="nombre_usuario" placeholder="Usuario">
                 </div>
-                <div class="mb-3">
+                <div class="col-5">
                     <label for="password" class="form-label">Contraseña:</label>
                     <input type="password" class="form-control" id="contraseña" placeholder="Password">
                 </div>

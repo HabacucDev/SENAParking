@@ -62,7 +62,38 @@
     margin-bottom: 1rem;
 }
 
+/* Posición de los autos decorativos */
+.car-left,
+.car-bottom-left {
+    position: absolute;
+    width: 130px;
+}
+
+.car-left {
+    top: 260px;
+    left: 0;
+}
+
+.car-bottom-left {
+    top: 450px;
+    left: -60px;
+}
+
+/* Ocultar autos en pantallas pequeñas */
+@media (max-width: 768px) {
+    .car-left,
+    .car-bottom-left {
+    display: none;
+    }
+}
+
 .sign-in-btn {
+    background-color: #222;
+    color: #ffffff;
+    width: 100%;
+}
+
+.sign-in-btn:hover {
     background-color: #222;
     color: #ffffff;
     width: 100%;
@@ -114,5 +145,4 @@ input[type="submit"]:hover {
     background-color: #1a1a1a;
 }
 
-/* xxXXEstilos reg_AccesosXXxx */ 
-
+/* xxXXEstilos reg_AccesosXXxx */

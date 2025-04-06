@@ -20,7 +20,6 @@
     <div id="header-container"></div>
 
     <div class="register-container">
-        <div class="titulo">Registrar un usuario</div>
 
         <form>
             <div class="row mb-3">
@@ -42,6 +41,7 @@
                     <select class="form-select" id="tipo_documento" name="tipo_documento" required>
                         <option value="" selected disabled>Seleccione tipo de documento</option>
                         <option value="Cedula">Cédula</option>
+                        <option value="Cedula_extranjeria">Cédula de Extranjeria</option>
                         <option value="Pasaporte">Pasaporte</option>
                         <option value="Tarjeta_identidad">Tarjeta Identidad</option>
                     </select>
@@ -90,11 +90,6 @@
                 <div class="col-md-6"><!--Divide en columnas para alinear los campos-->
                     <label for="hora_entrada" class="form-label">Hora de entrada:</label>
                     <input type="time" class="form-control" id="hora_entrada">
-                </div>
-                <!--Campo para solicitar la hora de salida-->
-                <div class="col-md-6">
-                    <label for="hora_salida" class="form-label">Hora de salida:</label>
-                    <input type="time" class="form-control" id="hora_salida">
                 </div>
             </div><br>
 

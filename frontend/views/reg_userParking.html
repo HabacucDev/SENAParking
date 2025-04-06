@@ -25,29 +25,85 @@
         <form>
             <div class="row mb-3">
                 <!--Campo para solicitar el nombre-->
-                <div class="col-md-6">
+                <div class="col-md-6"><!--Divide en columnas para alinear los campos-->
                     <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres" required>
                 </div>
-                <!--Campo para solicitar el nombre-->
+                <!--Campo para solicitar el apellido-->
                 <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre"><br>
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <!--Campo para solicitar el tipo de documento-->
+                <div class="col-md-6">
+                    <label for="tipo_documento" class="form-label">Tipo de documento:</label>
+                    <select class="form-select" id="tipo_documento" name="tipo_documento" required>
+                        <option value="" selected disabled>Seleccione tipo de documento</option>
+                        <option value="Cedula">Cédula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="Tarjeta_identidad">Tarjeta Identidad</option>
+                    </select>
                 </div>
                 <!--Campo para solicitar el documento-->
-                <div class="col-md-6"> <!--Divide en columnas para alinear los campos-->
-                    <label for="id" class="form-label">Documento:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su documento">
-                </div>
-                <!--Campo para solicitar el nombre-->
                 <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    <label for="id" class="form-label">Documento:</label>
+                    <input type="text" class="form-control" id="id" placeholder="Ingrese su documento" required>
                 </div>
+            </div>
+            <div class="row mb-3">
+                <!--Campo para solicitar la tarjeta de propiedad-->
+                <div class="col-md-6">
+                    <label for="tarjeta_propiedad" class="form-label">Tarjeta de propiedad:</label>
+                    <input type="text" class="form-control" id="tarjeta_propiedad"
+                        placeholder="Ingrese tarjeta de propiedad">
+                </div>
+                <!--Campo para solicitar el correo-->
+                <div class="col-md-6">
+                    <label for="correo_institucional" class="form-label">Correo:</label>
+                    <input type="email" class="form-control" id="correo_institucional" placeholder="Ingrese el correo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <!--Campo para solicitar el núm de contacto-->
+                <div class="col-md-6"><!--Divide en columnas para alinear los campos-->
+                    <label for="numero_contacto" class="form-label">Número contacto:</label>
+                    <input type="text" class="form-control" id="numero_contacto"
+                        placeholder="Ingrese número de contacto">
+                </div>
+                <!--Campo para solicitar el tipo de usuario-->
+                <div class="col-md-6">
+                    <label for="tipo_usuario" class="form-label">Tipo de usuario:</label>
+                    <select class="form-select" id="tipo_usuario" name="tipo_usuario" required>
+                        <option value="" selected disabled>Seleccione tipo de usuario</option>
+                        <option value="Servidor público">Servidor público</option>
+                        <option value="Contratista">Contratista</option>
+                        <option value="Trabajador Oficial">Trabajador Oficial</option>
+                        <option value="Visitante Autorizado">Visitante Autorizado</option>
+                        <option value="Aprendiz">Aprendiz</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <!--Campo para solicitar la hora de entrada-->
+                <div class="col-md-6"><!--Divide en columnas para alinear los campos-->
+                    <label for="hora_entrada" class="form-label">Hora de entrada:</label>
+                    <input type="time" class="form-control" id="hora_entrada">
+                </div>
+                <!--Campo para solicitar la hora de salida-->
+                <div class="col-md-6">
+                    <label for="hora_salida" class="form-label">Hora de salida:</label>
+                    <input type="time" class="form-control" id="hora_salida">
+                </div>
+            </div><br>
+
+            <!-- Botón Confirmar -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-confirmar">Confirmar</button>
+            </div>
         </form>
-
     </div>
-
 
     <script src="/frontend/public/js/scriptsDOM.js"></script>
 

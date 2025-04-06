@@ -30,39 +30,61 @@
         <br>
 
         <h2>Registro de vehículos</h2>
-        <form action="" method="POST">
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-mb-4">
-                    <div class="container-form" style="text-align: right;">
-                        <label for="placa">Placa:</label>
-                        <input type="text" name="placa" id="placa" required>
-                        <br>
-                        <label for="tipo">Tipo de vehículo:</label>
-                        <select name="tipo" id="">
-                            <option value="Automóvil">Automóvil</option>
-                            <option value="Motocicleta">Motocicleta</option>
-                            <option value="Camioneta">Bicicleta</option>
-                            <option value="Camión">Oficial</option>
-                            <option value="Tráiler">Aula móvil</option>
-                        </select>
+        <!DOCTYPE html>
+        <html lang="es">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Formulario Prueba</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+
+        <body>
+
+            <div class="container mt-5">
+                <form action="" method="POST">
+                    <div class="row mb-3">
+                        <!-- Columna izquierda -->
+                        <div class="col-md-6">
+                            <div style="text-align: right;">
+                                <label for="placa">Placa:</label>
+                                <input type="text" name="placa" id="placa" required class="form-control mb-2">
+
+                                <label for="tipo">Tipo de vehículo:</label>
+                                <select name="tipo" id="select" required class="form-control">
+                                    <option value="Automóvil">Automóvil</option>
+                                    <option value="Motocicleta">Motocicleta</option>
+                                    <option value="Camioneta">Bicicleta</option>
+                                    <option value="Camión">Oficial</option>
+                                    <option value="Tráiler">Aula móvil</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Columna derecha -->
+                        <div class="col-md-6">
+                            <div style="text-align: left;">
+                                <label for="color">Color:</label>
+                                <input type="text" name="color" id="color" required class="form-control mb-2">
+
+                                <label for="modelo">Modelo:</label>
+                                <input type="text" name="modelo" id="modelo" required class="form-control mb-2">
+
+                                <label for="observaciones">Observaciones:</label>
+                                <textarea name="observaciones" id="observaciones" class="form-control" style="resize: none;"></textarea>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-mb-4">
-                    <div class="container-form" style="text-align: left;">
-                        <label for="color">Color:</label>
-                        <input type="text" name="color" id="color" required>
-                        <br>
-                        <label for="modelo">Modelo:</label>
-                        <input type="text" name="modelo" id="modelo" required>
-                        <br>
-                        <textarea name="observaciones" id="observaciones">Observaciones</textarea>
-                    </div>
-                </div>
+                    <input type="submit" value="Confirmar" class="btn btn-primary">
+                </form>
             </div>
-            <input type="submit" value="Confirmar">
-        </form>
+
+        </body>
+
+        </html>
+
+
 
 
     </div>

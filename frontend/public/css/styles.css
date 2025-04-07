@@ -45,11 +45,11 @@
 }
 
 .register-container {
-    max-width: 600px;
+    max-width: 400px;
     margin: 100px auto 50px; /* Aumenta el margen superior a 100px */
 
     background-color: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }

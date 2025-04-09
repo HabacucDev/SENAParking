@@ -19,6 +19,28 @@
     <!-- Contenedor donde se insertará el header -->
     <div id="header-container"></div>
 
+<!-- Formulario -->
+<div class="register-container">
+
+    <form id="formulario">
+        <!--Fila del grid de Bootstrap con margen inferior de 3-->
+        <div class="row mb-3">
+            <div class="col-12"> <!-- Columna de 12 espacios-->
+                <!-- Etiqueta para el campo de texto, conectada con el input mediante el atributo "for"-->
+                <label for="nombre" class="form-label">Nombres:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres" required>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <label for="cedula" class="form-label">Numero de Documento:</label>
+                <input type="text" class="form-control" id="cedula" placeholder="Ingrese el Numero Documento" required>
+            </div>
+        </div>
+    </form>
+</div>
+
 
 
     <!-- Función para llamar al Header-->

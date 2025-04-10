@@ -29,31 +29,34 @@
 
 
     <!-- Formulario -->
-    <div class="register-container">
+    <div class="register-container" >
 
-        <form id="formulario">
+        <form class="formulario" id="formulario" >
             <!--Fila del grid de Bootstrap con margen inferior de 3-->
             <div class="row mb-3">
-                <div class="col-12"> <!-- Columna de 12 espacios-->
+                <div class="col-12" id="grupo__nombre"> <!-- Columna de 12 espacios-->
                     <!-- Etiqueta para el campo de texto, conectada con el input mediante el atributo "for"-->
                     <label for="nombre" class="form-label">Nombres:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres" required>
+                    <input type="text" class="form-control formulario__input" name="nombre" id="nombre" placeholder="Ingrese sus nombres" required>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12"id="grupo__apellido">
                     <label for="apellido" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos" required>
+                    <input type="text" class="form-control formulario__input" name="apellido" id="apellido" placeholder="Ingrese sus apellidos" required>
+                    <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
-                    <label for="cedula" class="form-label">Cedula:</label>
-                    <input type="text" class="form-control" id="cedula" placeholder="Ingrese el Documento" required>
+                <div class="col-12" id="grupo__documento">
+                    <label for="cedula" class="form-label">documento:</label>
+                    <input type="text" class="form-control formulario__input" name="documento" id="documento" placeholder="Ingrese el Documento" required>
+                    <p class="formulario__input-error">El documento debe tener entre 6 y 10 carracteres</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__rol">
                     <label for="rol" class="form-label">Rol:</label>
                     <select class="form-select" id="rol" name="rol" required>
                         <option value="" selected disabled>Selecciona el rol</option>
@@ -61,30 +64,35 @@
                         <option value="instructor">Supervisor</option>
                         <option value="administrador">Guarda de Seguridad</option>
                     </select>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__correo">
                     <label for="email" class="form-label">Correo Electronico:</label>
-                    <input type="email" class="form-control" id="correo_electronico" placeholder="Email" required>
+                    <input type="email" class="form-control formulario__input" name="correo" id="correo_electronico" placeholder="Email" required>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__numero">
                     <label for="numero" class="form-label">Número contacto:</label>
-                    <input type="numero" class="form-control" id="numero_contacto" placeholder="Numero" required>
+                    <input type="numero" class="form-control formulario__input" name="numero" id="numero_contacto" placeholder="Numero" required>
+                    <p class="formulario__input-error">El numero solo puede contener numeros y el maximo son 10 dígitos.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__usuario">
                     <label for="usurio" class="form-label">Nombre Usuario:</label>
-                    <input type="usuario" class="form-control" id="nombre_usuario" placeholder="Usuario" required>
+                    <input type="usuario" class="form-control formulario__input" name="usuario" id="nombre_usuario" placeholder="Usuario" required>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__contrasena">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="contraseña" placeholder="Password" required>
+                    <input type="password" class="form-control formulario__input" name="contrasena" id="contrasena" placeholder="Password" required>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
             </div>
             <br>
@@ -94,6 +102,9 @@
     </div>
     <!-- Cargar el header-->
     <script src="/frontend/public/js/scriptsDOM.js"></script>
+
+    <!-- llama al archivo de lavidacion del formulario -->
+    <script src="/frontend/public/js/validacion_user_system.js"></script>
 
 </body>
 

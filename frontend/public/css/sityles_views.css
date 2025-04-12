@@ -186,3 +186,26 @@ input[type="submit"]:hover {
 	border: 3px solid #bb2929;
 }
 /* fin de estilos para la de la validacion */
+
+
+/* xxXXEstilos ReportesXXxx */
+
+.back-arrow {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+main {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article {
+    border: 3px solid #ced4da;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #ffffff;
+}

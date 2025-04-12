@@ -190,6 +190,9 @@ input[type="submit"]:hover {
 
 /* xxXXEstilos ReportesXXxx */
 
+
+/* Flecha de retroceso */
+
 .back-arrow {
     font-size: 2rem;
     cursor: pointer;
@@ -202,10 +205,14 @@ main {
     padding: 20px;
 }
 
-article {
+.info-article {
     border: 3px solid #ced4da;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 6px;
+    padding: 12px 16px;
     background-color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

@@ -9,9 +9,11 @@ body {
 
 .card-header {
     font-weight: bold;
-    border-bottom: 3px solid transparent; /* Para los indicadores de color */
+    border-bottom: 3px solid transparent;
+    /* Para los indicadores de color */
     padding: 15px;
-    background-color: #f8f9fa; /* Un gris claro de fondo */
+    background-color: #f8f9fa;
+    /* Un gris claro de fondo */
 }
 
 .card-title {
@@ -36,7 +38,8 @@ body {
 }
 
 .sidebar .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Overlay sutil al pasar el ratón */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Overlay sutil al pasar el ratón */
 }
 
 main {
@@ -48,11 +51,13 @@ main {
 /* Estilos Dashboard Guardia */
 /* -------------------------------------------------------------------------- */
 .dashboard-guardia .sidebar {
-    background-color: #007832; /* Verde más vibrante */
+    background-color: #007832;
+    /* Verde más vibrante */
 }
 
 .dashboard-guardia .sidebar .nav-item.active .nav-link {
-    background-color: #39A900; /* Verde aún más brillante */
+    background-color: #39A900;
+    /* Verde aún más brillante */
     color: #fff;
 }
 
@@ -72,7 +77,8 @@ main {
 }
 
 .dashboard-guardia .btn-acceso {
-    background-color: #FDC300; /* Amarillo brillante */
+    background-color: #FDC300;
+    /* Amarillo brillante */
     border-color: #FDC300;
     color: #212529;
 }
@@ -83,7 +89,8 @@ main {
 }
 
 .dashboard-guardia .btn-salida {
-    background-color: #50E5F9; /* Cian vibrante */
+    background-color: #50E5F9;
+    /* Cian vibrante */
     border-color: #50E5F9;
     color: #212529;
 }
@@ -99,7 +106,8 @@ main {
 }
 
 .dashboard-guardia .badge-ocupado {
-    background-color: #dc3545; /* Rojo para ocupado */
+    background-color: #dc3545;
+    /* Rojo para ocupado */
     color: #fff;
 }
 
@@ -107,11 +115,13 @@ main {
 /* Estilos Dashboard Supervisor */
 /* -------------------------------------------------------------------------- */
 .dashboard-supervisor .sidebar {
-    background-color: #71277A; /* Morado intenso */
+    background-color: #71277A;
+    /* Morado intenso */
 }
 
 .dashboard-supervisor .sidebar .nav-item.active .nav-link {
-    background-color: #50E5F9; /* Cian como contraste */
+    background-color: #50E5F9;
+    /* Cian como contraste */
     color: #fff;
 }
 
@@ -137,18 +147,21 @@ main {
 }
 
 .dashboard-supervisor .list-group-item.cupos-item {
-    border-left: 5px solid #007832; /* Indicador verde para cupos */
+    border-left: 5px solid #007832;
+    /* Indicador verde para cupos */
 }
 
 /* -------------------------------------------------------------------------- */
 /* Estilos Dashboard Administrador */
 /* -------------------------------------------------------------------------- */
 .dashboard-administrador .sidebar {
-    background-color: #00304D; /* Azul oscuro */
+    background-color: #00304D;
+    /* Azul oscuro */
 }
 
 .dashboard-administrador .sidebar .nav-item.active .nav-link {
-    background-color: #FDC300; /* Amarillo brillante como acento */
+    background-color: #FDC300;
+    /* Amarillo brillante como acento */
     color: #000;
 }
 
@@ -170,7 +183,8 @@ main {
 
 .dashboard-administrador .list-group-item-reporte {
     background-color: #e9ecef;
-    border-left: 5px solid #71277A; /* Morado para reportes */
+    border-left: 5px solid #71277A;
+    /* Morado para reportes */
 }
 
 .dashboard-administrador .table thead th {

@@ -1,0 +1,41 @@
+/* Estilos específicos para el dashboard del guardia */
+.sidebar-guardia .nav-item.active .nav-link { background-color: #39A900; }
+.bg-guardia-header { background-color: #39A900 !important; color: white !important; }
+.btn-guardia-primary { background-color: #007832; border-color: #007832; }
+.btn-guardia-primary:hover { background-color: #39A900; border-color: #39A900; }
+.card-disponibilidad .card-header { background-color: #F6F6F6; border-bottom: 2px solid #39A900; color: #39A900; }
+.card-registro-acceso .card-header { background-color: #F6F6F6; border-bottom: 2px solid #FDC300; color: #FDC300; }
+.btn-registro-acceso { background-color: #FDC300; border-color: #FDC300; color: #000; }
+.btn-registro-acceso:hover { background-color: #e0b000; border-color: #e0b000; }
+.card-registro-salida .card-header { background-color: #F6F6F6; border-bottom: 2px solid #50E5F9; color: #50E5F9; }
+.btn-registro-salida { background-color: #50E5F9; border-color: #50E5F9; color: #000; }
+.btn-registro-salida:hover { background-color: #3ed0e7; border-color: #3ed0e7; }
+.card-usuarios .card-header { background-color: #F6F6F6; border-bottom: 2px solid #007832; color: #007832; }
+
+/* Estilos específicos para el dashboard del supervisor */
+.sidebar-supervisor .nav-item.active .nav-link { background-color: #71277A; }
+.bg-supervisor-header { background-color: #71277A !important; color: white !important; }
+.card-cupos-resumen .card-header { background-color: #F6F6F6; border-bottom: 2px solid #007832; color: #007832; }
+.bg-cupos-total { background-color: #007832 !important; color: white !important; }
+.bg-cupos-ocupados { background-color: #71277A !important; color: white !important; }
+.bg-cupos-disponibles { background-color: #39A900 !important; color: white !important; }
+.card-registro-guardia .card-header { background-color: #F6F6F6; border-bottom: 2px solid #50E5F9; color: #50E5F9; }
+.btn-registro-guardia { background-color: #50E5F9; border-color: #50E5F9; color: #000; }
+.btn-registro-guardia:hover { background-color: #3ed0e7; border-color: #3ed0e7; }
+.card-informes-guardias .card-header { background-color: #F6F6F6; border-bottom: 2px solid #FDC300; color: #FDC300; }
+
+/* Estilos específicos para el dashboard del administrador */
+.sidebar-admin .nav-item.active .nav-link { background-color: #000000; }
+.bg-admin-header { background-color: #000000 !important; color: white !important; }
+.card-resumen-general .card-header { background-color: #F6F6F6; border-bottom: 2px solid #FDC300; color: #FDC300; }
+.bg-resumen-usuarios-sistema { background-color: #00304D !important; color: white !important; }
+.bg-resumen-usuarios-parqueadero { background-color: #71277A !important; color: white !important; }
+.bg-resumen-accesos-hoy { background-color: #39A900 !important; color: white !important; }
+.bg-resumen-salidas-hoy { background-color: #50E5F9 !important; color: #000 !important; }
+.card-gestion-usuarios .card-header { background-color: #F6F6F6; border-bottom: 2px solid #007832; color: #007832; }
+.btn-registrar-usuario { background-color: #007832; border-color: #007832; }
+.btn-registrar-usuario:hover { background-color: #39A900; border-color: #39A900; }
+.card-reportes-generales .card-header { background-color: #F6F6F6; border-bottom: 2px solid #71277A; color: #71277A; }
+.list-group-item-reporte { background-color: #F6F6F6; border: 1px solid #E0E0E0; margin-bottom: 5px; border-radius: 5px; padding: 10px; }
+.list-group-item-reporte a { color: #00304D; text-decoration: none; }
+.list-group-item-reporte a:hover { color: #71277A; }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="author" content="AdsoDeveloperSolutions801">
+    <meta name="course" content="ADSO 2873801">
+    <!-- Favicon (ícono en la pestaña del navegador) -->
+    <link rel="icon" type="x-icon" href="/frontend/public/images/favicon.ico">
+    <!-- Enlace a Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <title>Administrador DASHBOARD | SENAParking</title>
+</head>
+<body>
+        <!-- Contenedor donde se insertará el header -->
+        <div id="header-container"></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar sidebar-admin">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                Gestión Usuarios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                Reportes Generales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-1.82.33H15a1.65 1.65 0 0 0-1-1.51v-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0-2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33H19a1.65 1.65 0 0 0-1-1.51V15z"></path></svg>
+                                Configuración
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 bg-admin-header py-2 px-3 rounded">Panel del Administrador</h1>
+                </div>
+
+                <div id="dashboard-content">
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <div class="card card-resumen-general bg-resumen-usuarios-sistema text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Usuarios del Sistema</h5>
+                                    <p class="card-text font-weight-bold" style="font-size: 1.5em;" id="total-usuarios-sistema">15</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-resumen-general bg-resumen-usuarios-parqueadero text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Usuarios Parqueadero</h5>
+                                    <p class="card-text font-weight-bold" style="font-size: 1.5em;" id="total-usuarios-parqueadero">150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-resumen-general bg-resumen-accesos-hoy text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Accesos Hoy</h5>
+                                    <p class="card-text font-weight-bold" style="font-size: 1.5em;" id="accesos-hoy">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card card-resumen-general bg-resumen-salidas-hoy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salidas Hoy</h5>
+                                    <p class="card-text font-weight-bold text-white" style="font-size: 1.5em;" id="salidas-hoy">45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card card-gestion-usuarios">
+                                <div class="card-header">
+                                    Gestión de Usuarios del Sistema
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">Administrar los usuarios con acceso al sistema (guardias, supervisores, administradores).</p>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Usuario</th>
+                                                <th>Rol</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>admin1</td>
+                                                <td>Administrador</td>
+                                                <td><button class="btn btn-sm btn-outline-secondary">Editar</button> <button class="btn btn-sm btn-outline-danger">Eliminar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>supervisor1</td>
+                                                <td>Supervisor</td>
+                                                <td><button class="btn btn-sm btn-outline-secondary">Editar</button> <button class="btn btn-sm btn-outline-danger">Eliminar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>guardia1</td>
+                                                <td>Guardia</td>
+                                                <td><button class="btn btn-sm btn-outline-secondary">Editar</button> <button class="btn btn-sm btn-outline-danger">Eliminar</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn btn-registrar-usuario btn-sm">Registrar Nuevo Usuario</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card card-reportes-generales">
+                                <div class="card-header">
+                                    Reportes Generales
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-muted">Acceso a los diferentes reportes generados por el sistema.</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item-reporte"><a href="#">Historial Completo de Accesos y Salidas</a></li>
+                                        <li class="list-group-item-reporte"><a href="#">Reporte de Actividad por Usuario del Sistema</a></li>
+                                        <li class="list-group-item-reporte"><a href="#">Reporte de Ocupación por Franja Horaria</a></li>
+                                        <li class="list-group-item-reporte"><a href="#">Reporte de Usuarios del Parqueadero Registrados</a></li>
+                                        </ul>
+                                    <button class="btn btn-sm btn-outline-secondary mt-2">Generar Reporte Personalizado</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Función para llamar al Header-->
+    <script src="/frontend/public/js/scriptsDOM.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -25,19 +25,23 @@
         <form id="formulario">
             <!--Fila del grid de Bootstrap con margen inferior de 3-->
             <div class="row mb-3">
-                <div class="col-12"> <!-- Columna de 12 espacios-->
-                    <!-- Etiqueta para el campo de texto, conectada con el input mediante el atributo "for"-->
+                <div class="col-12" id="grupo__nombre"> <!-- Columna de 12 espacios-->
+                                <!-- Etiqueta para el campo de texto, conectada con el input mediante el atributo "for"-->
                     <label for="nombre" class="form-label">Nombres:</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese sus nombres" required>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese sus nombres" required>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 80 digitos y solo debe contener letras.</p>
                 </div>
             </div>
 
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12" id="grupo__documento">
                     <label for="cedula" class="form-label">Numero de Documento:</label>
-                    <input type="text" class="form-control" id="cedula" placeholder="Ingrese el Numero Documento"
-                        required>
+                    <input type="text" class="form-control" name="documento" id="documento" placeholder="Ingrese el Numero Documento"required>
+                    <p class="formulario__input-error">El documento tiene que ser de 6 a 10 dígitos y solo debe contener numeros.</p>
                 </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-confirmar">Confirmar</button>
             </div>
         </form>
     </div>
@@ -46,6 +50,9 @@
 
     <!-- Función para llamar al Header-->
     <script src="/frontend/public/js/scriptsDOM.js"></script>
+
+    <!--Funcion para llamarla validacion-->
+    <script src="/frontend/public/js/validacion_reg_accesos.js"></script>
 
 </body>
 

@@ -2,7 +2,7 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-   nombre: /^[a-zA-ZÀ-ÿ]{4,80}$/, // Letras.
+   nombre: /^[a-zA-ZÀ-ÿ]{4,70}$/, // Letras.
    documento: /^\d{6,10}$/, // 6 a 10 digitos.
 }
 

@@ -6,7 +6,7 @@ const expresiones = {
    apellido: /^[a-zA-ZÀ-ÿ\s]{4,16}$/, // Letras y espacios, pueden llevar acentos.
    documento: /^\d{6,10}$/, // 6 a 10 digitos.
    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-   numero: /^\d{7,10}$/, // 7 a 14 numeros.
+   numero: /^\d{7,10}$/, // 7 a 10 numeros.
    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
    contrasena: /^.{4,12}$/ // 4 a 12 digitos.
 }

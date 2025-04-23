@@ -14,10 +14,10 @@ const campos = {
 const validarformulario = (e) => {
    switch (e.target.name) {
       case "correo":
-         validarcampo(expresiones.correo, e.target, 'nombre');
+         validarcampo(expresiones.correo, e.target, 'correo');
          break;
       case "password":
-         validarcampo(expresiones.password, e.target, 'apellido');
+         validarcampo(expresiones.password, e.target, 'password');
          break;
    }
 }

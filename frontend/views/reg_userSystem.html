@@ -27,6 +27,12 @@
     <img src="/frontend/public/images/backgrounds/Image.png" alt="Auto decorativo inferior izquierdo"
         class="car-bottom-left">
 
+    <!-- Flecha de retroceso -->
+    <div class="col-2 col-md-1 text-start">
+        <div class="back-arrow" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
 
     <!-- Formulario -->
     <div class="register-container">
@@ -37,22 +43,28 @@
                 <div class="col-12" id="grupo__nombre"> <!-- Columna de 12 espacios-->
                     <!-- Etiqueta para el campo de texto, conectada con el input mediante el atributo "for"-->
                     <label for="nombre" class="form-label">Nombres:</label>
-                    <input type="text" class="form-control formulario__input" name="nombre" id="nombre" placeholder="Ingrese sus nombres" required>
-                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                    <input type="text" class="form-control formulario__input" name="nombre" id="nombre"
+                        placeholder="Ingrese sus nombres" required>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener
+                        letras.</p>
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12"id="grupo__apellido">
+                <div class="col-12" id="grupo__apellido">
                     <label for="apellido" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control formulario__input" name="apellido" id="apellido" placeholder="Ingrese sus apellidos" required>
-                    <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                    <input type="text" class="form-control formulario__input" name="apellido" id="apellido"
+                        placeholder="Ingrese sus apellidos" required>
+                    <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener
+                        letras.</p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12" id="grupo__documento">
                     <label for="cedula" class="form-label">Documento:</label>
-                    <input type="text" class="form-control formulario__input" name="documento" id="documento" placeholder="Ingrese el Documento" required>
-                    <p class="formulario__input-error">El documento debe tener entre 6 y 10 digitos y solo puede contener numeros</p>
+                    <input type="text" class="form-control formulario__input" name="documento" id="documento"
+                        placeholder="Ingrese el Documento" required>
+                    <p class="formulario__input-error">El documento debe tener entre 6 y 10 digitos y solo puede
+                        contener numeros</p>
                 </div>
             </div>
             <div class="row mb-3">
@@ -64,39 +76,47 @@
                         <option value="instructor">Supervisor</option>
                         <option value="administrador">Guarda de Seguridad</option>
                     </select>
-                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener letras.</p>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
+                        letras.</p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12" id="grupo__correo">
                     <label for="email" class="form-label">Correo Electronico:</label>
-                    <input type="email" class="form-control formulario__input" name="correo" id="correo_electronico" placeholder="Email" required>
-                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    <input type="email" class="form-control formulario__input" name="correo" id="correo_electronico"
+                        placeholder="Email" required>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                        guion bajo.</p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12" id="grupo__numero">
                     <label for="numero" class="form-label">Número contacto:</label>
-                    <input type="numero" class="form-control formulario__input" name="numero" id="numero_contacto" placeholder="Numero" required>
-                    <p class="formulario__input-error">El numero tiene que ser de 7 a 14 digitos y solo puede contener numeros.</p>
+                    <input type="numero" class="form-control formulario__input" name="numero" id="numero_contacto"
+                        placeholder="Numero" required>
+                    <p class="formulario__input-error">El numero tiene que ser de 7 a 14 digitos y solo puede contener
+                        numeros.</p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12" id="grupo__usuario">
                     <label for="usurio" class="form-label">Nombre Usuario:</label>
-                    <input type="usuario" class="form-control formulario__input" name="usuario" id="nombre_usuario" placeholder="Usuario" required>
-                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras, numeros.</p>
+                    <input type="usuario" class="form-control formulario__input" name="usuario" id="nombre_usuario"
+                        placeholder="Usuario" required>
+                    <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener
+                        letras, numeros.</p>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-12" id="grupo__contrasena">
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control formulario__input" name="contrasena" id="contrasena" placeholder="Password" required>
+                    <input type="password" class="form-control formulario__input" name="contrasena" id="contrasena"
+                        placeholder="Password" required>
                     <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
             </div>
             <br>
-            <button type="submit" class="btn sign-in-btn">Sign In</button>
+            <button type="submit" class="btn sign-in-btn">Ingresar</button>
     </div>
     </form>
     </div>

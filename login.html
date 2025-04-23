@@ -41,6 +41,7 @@
                 <div class="col-12">
                     <label for="correo_electronico" class="form-label">Email:</label>
                     <input type="email" class="form-control formulario__input" name="correo" id="correo_electronico" placeholder="Email" required>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                 </div>
             </div>
 
@@ -49,7 +50,7 @@
                 <div class="col-12">
                     <label for="password" class="form-label">Contraseña:</label>
                     <input type="password" class="form-control formulario__input" name="correo" id="password" placeholder="Contraseña" required>
-                    
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
             </div>
 
@@ -67,6 +68,7 @@
 
     <!-- Función para llamar al Header-->
     <script src="/frontend/public/js/scriptsDOM.js"></script>
+    <script src="/frontend/public/js/validacion_login.js"></script>
 </body>
 
 

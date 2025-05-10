@@ -19,6 +19,11 @@
     <!-- Contenedor donde se insertará el header -->
     <div id="header-container"></div>
 
+    <!-- Botón para volver atrás -->
+    <div class="back-arrow" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+
     <!-- Formulario -->
     <div class="register-container">
 
@@ -41,7 +46,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-confirmar">Confirmar</button>
+                <button type="button" onclick="window.location.href='./dashboard_guardia.html'" class="btn btn-confirmar">Confirmar</button>
             </div>
         </form>
     </div>

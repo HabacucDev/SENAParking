@@ -63,3 +63,8 @@ inputs.forEach((input)=>{
 formulario.addEventListener('submit', (e)=>{
    e.preventDefault();
 });
+
+//=== funcion para redirigir al dashboard_supervisor desde la flecha de retroceso !
+function goBack() {
+   window.location.href = "/frontend/views/dashboard_supervisor.html";
+}

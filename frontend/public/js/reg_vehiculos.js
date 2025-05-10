@@ -79,3 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+//=== funcio para redirigir al dashboard_guardia desde la flecha de retroceso !
+function goBack() {
+    window.location.href = "/frontend/views/dashboard_guardia.html";
+}

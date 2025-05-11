@@ -67,30 +67,78 @@
         .right span {
             font-weight: bold;
         }
+        /* css para el desplegable del usuario */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            margin-right:20px;
+        }
+        .menu-horizontal{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu-horizontal > li > a{
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu-horizontal > li:hover{
+            background-color: #60ac63;
+        }
+        .menu-vertical{
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 200px;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        .menu-horizontal li:hover .menu-vertical{
+            display: block;
+        }
+        .menu-vertical li:hover{
+            background-color: black;
+        }
+        .menu-vertical li a{
+            display: block;
+            color: white;
+            padding: 15px 15px 15px 20px;
+            text-decoration: none;
+        }
     </style>
 
 
 <body>
-    
-<!-- Header Reutilizable -->
-<header class="header">
-    <div class="left">
-        <img src="/frontend/public/images/logo.png" alt="Logo" class="logo">
-        <div class="app-name">
-            <h1>SenaParking</h1>
-            <p>DeveloperSOLUTIONS801</p>
-        </div>
-    </div>
 
-    <div class="right">
-        <div class="user-session">
-            <!-- Solo mostramos la inicial del nombre -->
-            <div class="profile-initial">
-                {{ username.charAt(0).toUpperCase() }}
+    <!-- Header Reutilizable -->
+    <header class="header">
+        <div class="left">
+            <img src="/frontend/public/images/logo.png" alt="Logo" class="logo">
+            <div class="app-name">
+                <h1>SenaParking</h1>
+                <p>DeveloperSOLUTIONS801</p>
             </div>
         </div>
-    </div>
-</header>
+
+        <nav>
+            <ul class="menu-horizontal">
+                <li>
+                    <!-- Solo mostramos la inicial del nombre -->
+                    <a href="#">{{ username.charAt(0).toUpperCase() }}</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">ayuda</a></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Cerra sesion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="/frontend/public/js/headre.js"></script>
+    </header>
 
 
 </body>

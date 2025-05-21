@@ -54,7 +54,7 @@
 
         <a href="/forgot-password" class="text-muted mt-3" style="font-size: 14px;">¿Olvidaste tu contraseña?</a>
 
-       <?php
+    <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST["correo"];
     $password = $_POST["password"];
@@ -109,8 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <!-- Scripts -->
-    <script src="/frontend/public/js/scriptsDOM.js"></script>
-    <script src="/frontend/public/js/validacion_login.js"></script>
+    <script src="./frontend/public/js/scriptsDOM.js"></script>
+    <script src="./frontend/public/js/validacion_login.js"></script>
 </body>
 
 </html>

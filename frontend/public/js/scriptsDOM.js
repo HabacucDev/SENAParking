@@ -1,5 +1,5 @@
         // Cargar el contenido del header desde un archivo HTML externo
-        fetch('/frontend/views/layouts/header.html')
+        fetch('./frontend/views/layouts/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;

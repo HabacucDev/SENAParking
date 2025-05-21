@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="AdsoDeveloperSolutions801">
     <meta name="course" content="ADSO 2873801">
-    <link rel="icon" type="image/x-icon" href="/frontend/public/images/favicon.ico">
-    <link rel="stylesheet" href="/frontend/public/css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="./frontend/public/images/favicon.ico">
+    <link rel="stylesheet" href="./frontend/public/css/styles.css">
+
     
-    <link href="/frontend/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./frontend/public/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#000000">
     <meta http-equiv="refresh" content="60">
     <title>Login | SENAParking</title>
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Error de conexión: " . $conn->connect_error);
     }
 
-    $stmt = $conn->prepare("SELECT * FROM usuarios_sistema WHERE correo_electronico = ?");
+    $stmt = $conn->prepare("SELECT * FROM tb_userSys WHERE correo = ?");
     $stmt->bind_param("s", $correo);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -73,13 +73,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $usuario = $result->fetch_assoc();
 
-        if (password_verify($password, $usuario["contraseña"])) {
+        if (password_verify($password, $usuario["password"])) {
             session_start();
             $_SESSION['correo'] = $correo;
             $_SESSION['nombre'] = $usuario['nombre']; // opcional
 
+            switch ($usuario['id_rol']) {
+                case '1':
+                    header("Location: /SENAParking/frontend/views/dashboard_admin.html");
+                    break;
+                case '2':
+                    header("Location: /SENAParking/frontend/views/dashboard_supervisor.html");
+                    break;
+                case '3':
+                    header("Location: /SENAParking/frontend/views/dashboard_guardia.html");
+                    break;
+            }
+
+                
             // Redirigir a archivo HTML
-            header("Location: /senaparking/SENAParking/frontend/views/dashboard_admin.html");
+            /*header("Location: /SENAParking/frontend/views/dashboard_admin.html");*/
             exit();
         } else {
             echo "<p style='color:red;'>Contraseña incorrecta</p>";

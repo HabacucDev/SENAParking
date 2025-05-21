@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST["correo"];
     $password = $_POST["password"];
 
-    $conn = new mysqli("localhost", "root", "", "prueba_db");
+    $conn = new mysqli("localhost", "root", "", "senaparking_db");
 
     if ($conn->connect_error) {
         die("Error de conexión: " . $conn->connect_error);

@@ -8,6 +8,8 @@
     <meta name="course" content="ADSO 2873801">
     <link rel="icon" type="image/x-icon" href="/frontend/public/images/favicon.ico">
     <link rel="stylesheet" href="/frontend/public/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
     <link href="/frontend/public/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#000000">
     <meta http-equiv="refresh" content="60">
@@ -52,36 +54,45 @@
 
         <a href="/forgot-password" class="text-muted mt-3" style="font-size: 14px;">¿Olvidaste tu contraseña?</a>
 
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $correo = $_POST["correo"];
-            $password = $_POST["password"];
+       <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $correo = $_POST["correo"];
+    $password = $_POST["password"];
 
-            $conn = new mysqli("localhost", "root", "", "prueba_db");
+    $conn = new mysqli("localhost", "root", "", "senaparking_db");
 
-            if ($conn->connect_error) {
-                die("Error de conexión: " . $conn->connect_error);
-            }
+    if ($conn->connect_error) {
+        die("Error de conexión: " . $conn->connect_error);
+    }
 
-            // Usamos sentencia preparada para evitar inyección SQL
-            $stmt = $conn->prepare("SELECT * FROM users WHERE correo = ? AND password = ?");
-            $stmt->bind_param("ss", $correo, $password);
-            $stmt->execute();
-            $result = $stmt->get_result();
+    $stmt = $conn->prepare("SELECT * FROM usuarios_sistema WHERE correo_electronico = ?");
+    $stmt->bind_param("s", $correo);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-            if ($result->num_rows > 0) {
-                // Iniciar sesión y redirigir
-                session_start();
-                $_SESSION['correo'] = $correo;
-                header("Location: /frontend/views/dashboard_admin.php");
-                exit();
-            } else {
-                echo "<p style='color:red;'>Correo o contraseña incorrectos</p>";
-            }
+    if ($result->num_rows > 0) {
+        $usuario = $result->fetch_assoc();
 
-            $conn->close();
+        if (password_verify($password, $usuario["contraseña"])) {
+            session_start();
+            $_SESSION['correo'] = $correo;
+            $_SESSION['nombre'] = $usuario['nombre']; // opcional
+
+            // Redirigir a archivo HTML
+            header("Location: /senaparking/SENAParking/frontend/views/dashboard_admin.html");
+            exit();
+        } else {
+            echo "<p style='color:red;'>Contraseña incorrecta</p>";
         }
-        ?>
+    } else {
+        echo "<p style='color:red;'>Usuario no encontrado</p>";
+    }
+
+    $conn->close();
+}
+?>
+
+
     </div>
 
     <!-- Scripts -->

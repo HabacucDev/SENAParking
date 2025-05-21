@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ADSO";
+$dbname = "senaparking_db";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

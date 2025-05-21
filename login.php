@@ -21,7 +21,7 @@
     <div id="header-container"></div>
 
     <!-- Logo SENA -->
-    <img src="/frontend/public/images/logo_sena.png" alt="Logo SENA"
+    <img src="./frontend/public/images/logo_sena.png" alt="Logo SENA"
         style="position: absolute; top: 100px; right: 70px; width: 100px;">
 
     <!-- Contenedor de registro -->

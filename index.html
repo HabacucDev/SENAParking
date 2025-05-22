@@ -8,20 +8,25 @@
     <meta name="course" content="ADSO 2873801">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon (ícono en la pestaña del navegador) -->
-    <link rel="icon" type="x-icon" href="/frontend/public/images/favicon.ico">
+    <link rel="icon" type="x-icon" href="./frontend/public/images/favicon.ico">
     <!-- Enlace a Bootstrap -->
-    <link href="/frontend/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./frontend/public/css/bootstrap.min.css" rel="stylesheet">
     <!-- Enlace a estilos personalizados -->
-    <link rel="stylesheet" href="/frontend/public/css/styles.css">
+    <link rel="stylesheet" href="./frontend/public/css/styles.css">
     <title>SENAPARKING</title>
 </head>
 
 <body class="bg-index">
+    
     <!-- Contenedor donde se insertará el header -->
     <div id="header-container"></div>
+    <!-- Logo SENA -->
+    <img src="./frontend/public/images/backgrounds/bg_index.png" alt="Logo SENA"
+        style="position: absolute; top: 100px; right: 70px; width: 100px;">
+    </div>
 
     <!-- Logo SENA -->
-    <img src="/frontend/public/images/logo_sena.png" alt="Logo SENA"
+    <img src="./frontend/public/images/logo_sena.png" alt="Logo SENA"
         style="position: absolute; top: 100px; right: 70px; width: 100px;">
     </div>
 
@@ -34,7 +39,7 @@
             <div class="col-md-4 login-container text-center p-4">
                 <div class="d-flex justify-content-center gap-5">
                     <!-- Botón(negro) con padding vertical de 3 y un efecto hover personalizado -->
-                    <button type="button" onclick="window.location.href='./login.html'" class="btn btn-dark py-2 btn-hover">⭐ Iniciar Sesión</button>
+                    <button type="button" onclick="window.location.href='./login.php'" class="btn btn-dark py-2 btn-hover">⭐ Iniciar Sesión</button>
                     <!-- Botón(verde) con el mismo estilo anterior -->
                     <button class="btn btn-success py-2 btn-hover">⭐ ¿Ayuda?</button>
                 </div>
@@ -44,7 +49,7 @@
 
 
     <!-- Función para llamar al Header-->
-    <script src="/frontend/public/js/scriptsDOM.js"></script>
+    <script src="./frontend/public/js/scriptsDOM.js"></script>
 
 </body>
 

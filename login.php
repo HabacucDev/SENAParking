@@ -17,9 +17,12 @@
 </head>
 
 <body class="bg-login">
+
+
     <!-- Contenedor para el header -->
     <div id="header-container"></div>
 
+    
     <!-- Logo SENA -->
     <img src="./frontend/public/images/logo_sena.png" alt="Logo SENA"
         style="position: absolute; top: 100px; right: 70px; width: 100px;">
@@ -108,9 +111,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </div>
 
+    
     <!-- Scripts -->
     <script src="./frontend/public/js/scriptsDOM.js"></script>
     <script src="./frontend/public/js/validacion_login.js"></script>
 </body>
 
 </html>
+
+

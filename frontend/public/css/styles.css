@@ -1,5 +1,5 @@
 /* ====== Estilos Generales ====== */
-
+/* 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -115,7 +115,5 @@ body {
 .formulario__grupo-incorrecto .formulario__input {
     border: 3px solid #bb2929;
 }
-
-
 
 
